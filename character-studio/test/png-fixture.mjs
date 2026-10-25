@@ -1,0 +1,3 @@
+import {deflateSync} from 'node:zlib';
+import {crc32} from '../src/png.mjs';
+export function png({alpha=0,filter=0}={}){const chunk=(name,payload)=>{const data=Buffer.concat([Buffer.from(name),payload]),length=Buffer.alloc(4),crc=Buffer.alloc(4);length.writeUInt32BE(payload.length);crc.writeUInt32BE(crc32(data));return Buffer.concat([length,data,crc]);};const header=Buffer.alloc(13);header.writeUInt32BE(1,0);header.writeUInt32BE(1,4);header[8]=8;header[9]=6;return Buffer.concat([Buffer.from('89504e470d0a1a0a','hex'),chunk('IHDR',header),chunk('IDAT',deflateSync(Buffer.from([filter,120,80,40,alpha]))),chunk('IEND',Buffer.alloc(0))]);}

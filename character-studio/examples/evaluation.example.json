@@ -1,0 +1,100 @@
+{
+  "persona_frozen_hash": "fixture-hash",
+  "rubric_frozen_hash": "fixture-rubric",
+  "coordinator_seen_holdout": false,
+  "extraction_scene_ids": [
+    "train"
+  ],
+  "extraction_origin_ids": [
+    "train-origin"
+  ],
+  "previously_exposed_test_scene_ids": [],
+  "repetitions": 2,
+  "memory": false,
+  "retrieval": false,
+  "actor_model": "actor-A",
+  "judge_model": "judge-B",
+  "variants": [
+    "generic",
+    "name_only",
+    "persona_named",
+    "persona_anonymous",
+    "wrong_persona"
+  ],
+  "calibration": {
+    "order_swap_checked": true,
+    "same_answer_consistency_checked": true
+  },
+  "cases": [
+    {
+      "id": "q0",
+      "scene_id": "test-0",
+      "origin_id": "test-origin-0",
+      "track": "fact_recall",
+      "context_type": "synthetic_scenario",
+      "provided_fact_ids": [
+        "fact1"
+      ],
+      "reference_required_fact_ids": [
+        "fact1"
+      ],
+      "reference_verified": true
+    },
+    {
+      "id": "q1",
+      "scene_id": "test-1",
+      "origin_id": "test-origin-1",
+      "track": "personality_transfer",
+      "context_type": "synthetic_scenario",
+      "provided_fact_ids": [
+        "fact1"
+      ],
+      "reference_required_fact_ids": [
+        "fact1"
+      ],
+      "reference_verified": true
+    },
+    {
+      "id": "q2",
+      "scene_id": "test-2",
+      "origin_id": "test-origin-2",
+      "track": "language_style",
+      "context_type": "synthetic_scenario",
+      "provided_fact_ids": [
+        "fact1"
+      ],
+      "reference_required_fact_ids": [
+        "fact1"
+      ],
+      "reference_verified": true
+    },
+    {
+      "id": "q3",
+      "scene_id": "test-3",
+      "origin_id": "test-origin-3",
+      "track": "immersion",
+      "context_type": "synthetic_scenario",
+      "provided_fact_ids": [
+        "fact1"
+      ],
+      "reference_required_fact_ids": [
+        "fact1"
+      ],
+      "reference_verified": true
+    },
+    {
+      "id": "q4",
+      "scene_id": "test-4",
+      "origin_id": "test-origin-4",
+      "track": "multi_turn",
+      "context_type": "synthetic_scenario",
+      "provided_fact_ids": [
+        "fact1"
+      ],
+      "reference_required_fact_ids": [
+        "fact1"
+      ],
+      "reference_verified": true
+    }
+  ]
+}

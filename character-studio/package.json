@@ -1,0 +1,29 @@
+{
+  "name": "character-studio-mcp",
+  "version": "0.6.0",
+  "description": "Evidence-based character research, persona and chibi image workflow for MCP agents and DeepSeek Harness",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "bin": {
+    "character-studio-mcp": "src/server.mjs"
+  },
+  "files": [
+    "src/",
+    "prompts/",
+    "docs/",
+    "scripts/install-dsh.ps1",
+    "README.md"
+  ],
+  "scripts": {
+    "start": "node src/server.mjs",
+    "test": "node --test \"test/*.test.mjs\"",
+    "demo": "node src/cli.mjs demo",
+    "pack:release": "node scripts/package.mjs"
+  },
+  "dependencies": {
+    "sharp": "0.35.5"
+  }
+}

@@ -1,0 +1,590 @@
+{
+  "spec": {
+    "character_id": "fiction:lampkeeper",
+    "work": "虚构测试作品",
+    "name": "巡灯人甲",
+    "continuity": "main",
+    "branch": "shared",
+    "strict_story": true,
+    "stage_order": 2,
+    "capabilities": [
+      "text"
+    ]
+  },
+  "sources": [
+    {
+      "id": "s-identity-0",
+      "url": "https://example.org/identity/0",
+      "origin_id": "origin-identity-0",
+      "body": "虚构测试材料：identity情境0。这是一段专为检查证据结构编写的内容，不是真实人物资料。",
+      "sha256": "8ca87e7617648fe0bb96671434e27b7d521a2dba64f06c89f73d9affe140b181",
+      "access": "body",
+      "kind": "official_script",
+      "retrieved_at": "2026-10-25"
+    },
+    {
+      "id": "s-motivation-0",
+      "url": "https://example.org/motivation/0",
+      "origin_id": "origin-motivation-0",
+      "body": "虚构测试材料：motivation情境0。这是一段专为检查证据结构编写的内容，不是真实人物资料。",
+      "sha256": "7743c7f21f796c2443a6a7e13f117cab38021f3833a14f757e0e5d12fea2d30c",
+      "access": "body",
+      "kind": "official_script",
+      "retrieved_at": "2026-10-25"
+    },
+    {
+      "id": "s-motivation-1",
+      "url": "https://example.org/motivation/1",
+      "origin_id": "origin-motivation-1",
+      "body": "虚构测试材料：motivation情境1。这是一段专为检查证据结构编写的内容，不是真实人物资料。",
+      "sha256": "471dbf1e50d23e35b4e44ca7bad120d89b4a8d3a60d9515740d3f0d1a126e4b9",
+      "access": "body",
+      "kind": "official_script",
+      "retrieved_at": "2026-10-25"
+    },
+    {
+      "id": "s-values-0",
+      "url": "https://example.org/values/0",
+      "origin_id": "origin-values-0",
+      "body": "虚构测试材料：values情境0。这是一段专为检查证据结构编写的内容，不是真实人物资料。",
+      "sha256": "792a61a91771d38e03c030a641a415a8d9be735661fc5a5b2a9bd1eca955ce87",
+      "access": "body",
+      "kind": "official_script",
+      "retrieved_at": "2026-10-25"
+    },
+    {
+      "id": "s-values-1",
+      "url": "https://example.org/values/1",
+      "origin_id": "origin-values-1",
+      "body": "虚构测试材料：values情境1。这是一段专为检查证据结构编写的内容，不是真实人物资料。",
+      "sha256": "2984eacf466323c3d14b551f7548b8b5e35d99314c4d1a96c27d35838468e2e0",
+      "access": "body",
+      "kind": "official_script",
+      "retrieved_at": "2026-10-25"
+    },
+    {
+      "id": "s-history-0",
+      "url": "https://example.org/history/0",
+      "origin_id": "origin-history-0",
+      "body": "虚构测试材料：history情境0。这是一段专为检查证据结构编写的内容，不是真实人物资料。",
+      "sha256": "5b983a4fdc033e3851886551fe75768657bf5ba127411cab538978070fd9b52a",
+      "access": "body",
+      "kind": "official_script",
+      "retrieved_at": "2026-10-25"
+    },
+    {
+      "id": "s-relationships-0",
+      "url": "https://example.org/relationships/0",
+      "origin_id": "origin-relationships-0",
+      "body": "虚构测试材料：relationships情境0。这是一段专为检查证据结构编写的内容，不是真实人物资料。",
+      "sha256": "9fe0f91c5d5c6ece30a8ab3da7de571f2b7e82bca1575a2c72fa9108354d6f95",
+      "access": "body",
+      "kind": "official_script",
+      "retrieved_at": "2026-10-25"
+    },
+    {
+      "id": "s-relationships-1",
+      "url": "https://example.org/relationships/1",
+      "origin_id": "origin-relationships-1",
+      "body": "虚构测试材料：relationships情境1。这是一段专为检查证据结构编写的内容，不是真实人物资料。",
+      "sha256": "15127f6fd30a226aacd9168e81762388d7b88c1016e95b6e8246484f712f19b1",
+      "access": "body",
+      "kind": "official_script",
+      "retrieved_at": "2026-10-25"
+    },
+    {
+      "id": "s-language-0",
+      "url": "https://example.org/language/0",
+      "origin_id": "origin-language-0",
+      "body": "虚构测试材料：language情境0。这是一段专为检查证据结构编写的内容，不是真实人物资料。",
+      "sha256": "62acb43d9f4e0d2a8b8a03accb6d467df97277dc3eec9853df908bfa6cb76805",
+      "access": "body",
+      "kind": "official_script",
+      "retrieved_at": "2026-10-25"
+    },
+    {
+      "id": "s-language-1",
+      "url": "https://example.org/language/1",
+      "origin_id": "origin-language-1",
+      "body": "虚构测试材料：language情境1。这是一段专为检查证据结构编写的内容，不是真实人物资料。",
+      "sha256": "f4433791cfa1e8f6c0ee5f5ae554c7aef378fede130cb4b28550180a07ff34e8",
+      "access": "body",
+      "kind": "official_script",
+      "retrieved_at": "2026-10-25"
+    },
+    {
+      "id": "s-behavior-0",
+      "url": "https://example.org/behavior/0",
+      "origin_id": "origin-behavior-0",
+      "body": "虚构测试材料：behavior情境0。这是一段专为检查证据结构编写的内容，不是真实人物资料。",
+      "sha256": "d3988a823cbecce739ff9474c96ded4336fd920ba2933a281faea84baf83668f",
+      "access": "body",
+      "kind": "official_script",
+      "retrieved_at": "2026-10-25"
+    },
+    {
+      "id": "s-behavior-1",
+      "url": "https://example.org/behavior/1",
+      "origin_id": "origin-behavior-1",
+      "body": "虚构测试材料：behavior情境1。这是一段专为检查证据结构编写的内容，不是真实人物资料。",
+      "sha256": "4598adb9dc3f02631f9832528bc6aefa889520a94539ffb3446968ee0646528c",
+      "access": "body",
+      "kind": "official_script",
+      "retrieved_at": "2026-10-25"
+    },
+    {
+      "id": "s-knowledge_limits-0",
+      "url": "https://example.org/knowledge_limits/0",
+      "origin_id": "origin-knowledge_limits-0",
+      "body": "虚构测试材料：knowledge_limits情境0。这是一段专为检查证据结构编写的内容，不是真实人物资料。",
+      "sha256": "829e8acf9fc08ffcdc358409a0037e86d28720bd189e62d643a9034b3f87b5bd",
+      "access": "body",
+      "kind": "official_script",
+      "retrieved_at": "2026-10-25"
+    },
+    {
+      "id": "s-daily-0",
+      "url": "https://example.org/daily/0",
+      "origin_id": "origin-daily-0",
+      "body": "虚构测试材料：daily情境0。这是一段专为检查证据结构编写的内容，不是真实人物资料。",
+      "sha256": "7080bf12f5a28e11af2e2988cc480be90f7c607d20fca42ebe7445816010d1d2",
+      "access": "body",
+      "kind": "official_script",
+      "retrieved_at": "2026-10-25"
+    },
+    {
+      "id": "s-counterexamples-0",
+      "url": "https://example.org/counterexamples/0",
+      "origin_id": "origin-counterexamples-0",
+      "body": "虚构测试材料：counterexamples情境0。这是一段专为检查证据结构编写的内容，不是真实人物资料。",
+      "sha256": "fb56887824742ffc9a14f2eb8c8165c2360c0a773081c0b1e147d42a04fea8a3",
+      "access": "body",
+      "kind": "official_script",
+      "retrieved_at": "2026-10-25"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "e-identity-0",
+      "source_id": "s-identity-0",
+      "dimension": "identity",
+      "scene_id": "scene-identity-0",
+      "scene_mode": "canon",
+      "scope": {
+        "character_id": "fiction:lampkeeper",
+        "continuity": "main",
+        "branch": "shared",
+        "stage_order": 1
+      },
+      "locator": "测试段落",
+      "start": 0,
+      "end": 46,
+      "quote": "虚构测试材料：identity情境0。这是一段专为检查证据结构编写的内容，不是真实人物资料。",
+      "situations": [],
+      "entailment": {
+        "status": "supported",
+        "method": "human",
+        "assessor": "synthetic-fixture-author",
+        "reason": "仅用于工程回归，不是人物真实性认证"
+      }
+    },
+    {
+      "id": "e-motivation-0",
+      "source_id": "s-motivation-0",
+      "dimension": "motivation",
+      "scene_id": "scene-motivation-0",
+      "scene_mode": "canon",
+      "scope": {
+        "character_id": "fiction:lampkeeper",
+        "continuity": "main",
+        "branch": "shared",
+        "stage_order": 1
+      },
+      "locator": "测试段落",
+      "start": 0,
+      "end": 48,
+      "quote": "虚构测试材料：motivation情境0。这是一段专为检查证据结构编写的内容，不是真实人物资料。",
+      "situations": [
+        "routine",
+        "pressure"
+      ],
+      "entailment": {
+        "status": "supported",
+        "method": "human",
+        "assessor": "synthetic-fixture-author",
+        "reason": "仅用于工程回归，不是人物真实性认证"
+      }
+    },
+    {
+      "id": "e-motivation-1",
+      "source_id": "s-motivation-1",
+      "dimension": "motivation",
+      "scene_id": "scene-motivation-1",
+      "scene_mode": "canon",
+      "scope": {
+        "character_id": "fiction:lampkeeper",
+        "continuity": "main",
+        "branch": "shared",
+        "stage_order": 1
+      },
+      "locator": "测试段落",
+      "start": 0,
+      "end": 48,
+      "quote": "虚构测试材料：motivation情境1。这是一段专为检查证据结构编写的内容，不是真实人物资料。",
+      "situations": [
+        "routine",
+        "pressure"
+      ],
+      "entailment": {
+        "status": "supported",
+        "method": "human",
+        "assessor": "synthetic-fixture-author",
+        "reason": "仅用于工程回归，不是人物真实性认证"
+      }
+    },
+    {
+      "id": "e-values-0",
+      "source_id": "s-values-0",
+      "dimension": "values",
+      "scene_id": "scene-values-0",
+      "scene_mode": "canon",
+      "scope": {
+        "character_id": "fiction:lampkeeper",
+        "continuity": "main",
+        "branch": "shared",
+        "stage_order": 1
+      },
+      "locator": "测试段落",
+      "start": 0,
+      "end": 44,
+      "quote": "虚构测试材料：values情境0。这是一段专为检查证据结构编写的内容，不是真实人物资料。",
+      "situations": [
+        "conflict",
+        "refusal"
+      ],
+      "entailment": {
+        "status": "supported",
+        "method": "human",
+        "assessor": "synthetic-fixture-author",
+        "reason": "仅用于工程回归，不是人物真实性认证"
+      }
+    },
+    {
+      "id": "e-values-1",
+      "source_id": "s-values-1",
+      "dimension": "values",
+      "scene_id": "scene-values-1",
+      "scene_mode": "canon",
+      "scope": {
+        "character_id": "fiction:lampkeeper",
+        "continuity": "main",
+        "branch": "shared",
+        "stage_order": 1
+      },
+      "locator": "测试段落",
+      "start": 0,
+      "end": 44,
+      "quote": "虚构测试材料：values情境1。这是一段专为检查证据结构编写的内容，不是真实人物资料。",
+      "situations": [
+        "conflict",
+        "refusal"
+      ],
+      "entailment": {
+        "status": "supported",
+        "method": "human",
+        "assessor": "synthetic-fixture-author",
+        "reason": "仅用于工程回归，不是人物真实性认证"
+      }
+    },
+    {
+      "id": "e-history-0",
+      "source_id": "s-history-0",
+      "dimension": "history",
+      "scene_id": "scene-history-0",
+      "scene_mode": "canon",
+      "scope": {
+        "character_id": "fiction:lampkeeper",
+        "continuity": "main",
+        "branch": "shared",
+        "stage_order": 1
+      },
+      "locator": "测试段落",
+      "start": 0,
+      "end": 45,
+      "quote": "虚构测试材料：history情境0。这是一段专为检查证据结构编写的内容，不是真实人物资料。",
+      "situations": [],
+      "entailment": {
+        "status": "supported",
+        "method": "human",
+        "assessor": "synthetic-fixture-author",
+        "reason": "仅用于工程回归，不是人物真实性认证"
+      }
+    },
+    {
+      "id": "e-relationships-0",
+      "source_id": "s-relationships-0",
+      "dimension": "relationships",
+      "scene_id": "scene-relationships-0",
+      "scene_mode": "canon",
+      "scope": {
+        "character_id": "fiction:lampkeeper",
+        "continuity": "main",
+        "branch": "shared",
+        "stage_order": 1
+      },
+      "locator": "测试段落",
+      "start": 0,
+      "end": 51,
+      "quote": "虚构测试材料：relationships情境0。这是一段专为检查证据结构编写的内容，不是真实人物资料。",
+      "situations": [
+        "stranger",
+        "familiar"
+      ],
+      "entailment": {
+        "status": "supported",
+        "method": "human",
+        "assessor": "synthetic-fixture-author",
+        "reason": "仅用于工程回归，不是人物真实性认证"
+      }
+    },
+    {
+      "id": "e-relationships-1",
+      "source_id": "s-relationships-1",
+      "dimension": "relationships",
+      "scene_id": "scene-relationships-1",
+      "scene_mode": "canon",
+      "scope": {
+        "character_id": "fiction:lampkeeper",
+        "continuity": "main",
+        "branch": "shared",
+        "stage_order": 1
+      },
+      "locator": "测试段落",
+      "start": 0,
+      "end": 51,
+      "quote": "虚构测试材料：relationships情境1。这是一段专为检查证据结构编写的内容，不是真实人物资料。",
+      "situations": [
+        "stranger",
+        "familiar"
+      ],
+      "entailment": {
+        "status": "supported",
+        "method": "human",
+        "assessor": "synthetic-fixture-author",
+        "reason": "仅用于工程回归，不是人物真实性认证"
+      }
+    },
+    {
+      "id": "e-language-0",
+      "source_id": "s-language-0",
+      "dimension": "language",
+      "scene_id": "scene-language-0",
+      "scene_mode": "canon",
+      "scope": {
+        "character_id": "fiction:lampkeeper",
+        "continuity": "main",
+        "branch": "shared",
+        "stage_order": 1
+      },
+      "locator": "测试段落",
+      "start": 0,
+      "end": 46,
+      "quote": "虚构测试材料：language情境0。这是一段专为检查证据结构编写的内容，不是真实人物资料。",
+      "situations": [
+        "routine",
+        "pressure",
+        "serious"
+      ],
+      "entailment": {
+        "status": "supported",
+        "method": "human",
+        "assessor": "synthetic-fixture-author",
+        "reason": "仅用于工程回归，不是人物真实性认证"
+      }
+    },
+    {
+      "id": "e-language-1",
+      "source_id": "s-language-1",
+      "dimension": "language",
+      "scene_id": "scene-language-1",
+      "scene_mode": "canon",
+      "scope": {
+        "character_id": "fiction:lampkeeper",
+        "continuity": "main",
+        "branch": "shared",
+        "stage_order": 1
+      },
+      "locator": "测试段落",
+      "start": 0,
+      "end": 46,
+      "quote": "虚构测试材料：language情境1。这是一段专为检查证据结构编写的内容，不是真实人物资料。",
+      "situations": [
+        "routine",
+        "pressure",
+        "serious"
+      ],
+      "entailment": {
+        "status": "supported",
+        "method": "human",
+        "assessor": "synthetic-fixture-author",
+        "reason": "仅用于工程回归，不是人物真实性认证"
+      }
+    },
+    {
+      "id": "e-behavior-0",
+      "source_id": "s-behavior-0",
+      "dimension": "behavior",
+      "scene_id": "scene-behavior-0",
+      "scene_mode": "canon",
+      "scope": {
+        "character_id": "fiction:lampkeeper",
+        "continuity": "main",
+        "branch": "shared",
+        "stage_order": 1
+      },
+      "locator": "测试段落",
+      "start": 0,
+      "end": 46,
+      "quote": "虚构测试材料：behavior情境0。这是一段专为检查证据结构编写的内容，不是真实人物资料。",
+      "situations": [
+        "benefit",
+        "risk",
+        "conflict"
+      ],
+      "entailment": {
+        "status": "supported",
+        "method": "human",
+        "assessor": "synthetic-fixture-author",
+        "reason": "仅用于工程回归，不是人物真实性认证"
+      }
+    },
+    {
+      "id": "e-behavior-1",
+      "source_id": "s-behavior-1",
+      "dimension": "behavior",
+      "scene_id": "scene-behavior-1",
+      "scene_mode": "canon",
+      "scope": {
+        "character_id": "fiction:lampkeeper",
+        "continuity": "main",
+        "branch": "shared",
+        "stage_order": 1
+      },
+      "locator": "测试段落",
+      "start": 0,
+      "end": 46,
+      "quote": "虚构测试材料：behavior情境1。这是一段专为检查证据结构编写的内容，不是真实人物资料。",
+      "situations": [
+        "benefit",
+        "risk",
+        "conflict"
+      ],
+      "entailment": {
+        "status": "supported",
+        "method": "human",
+        "assessor": "synthetic-fixture-author",
+        "reason": "仅用于工程回归，不是人物真实性认证"
+      }
+    },
+    {
+      "id": "e-knowledge_limits-0",
+      "source_id": "s-knowledge_limits-0",
+      "dimension": "knowledge_limits",
+      "scene_id": "scene-knowledge_limits-0",
+      "scene_mode": "canon",
+      "scope": {
+        "character_id": "fiction:lampkeeper",
+        "continuity": "main",
+        "branch": "shared",
+        "stage_order": 1
+      },
+      "locator": "测试段落",
+      "start": 0,
+      "end": 54,
+      "quote": "虚构测试材料：knowledge_limits情境0。这是一段专为检查证据结构编写的内容，不是真实人物资料。",
+      "situations": [],
+      "entailment": {
+        "status": "supported",
+        "method": "human",
+        "assessor": "synthetic-fixture-author",
+        "reason": "仅用于工程回归，不是人物真实性认证"
+      }
+    },
+    {
+      "id": "e-daily-0",
+      "source_id": "s-daily-0",
+      "dimension": "daily",
+      "scene_id": "scene-daily-0",
+      "scene_mode": "canon",
+      "scope": {
+        "character_id": "fiction:lampkeeper",
+        "continuity": "main",
+        "branch": "shared",
+        "stage_order": 1
+      },
+      "locator": "测试段落",
+      "start": 0,
+      "end": 43,
+      "quote": "虚构测试材料：daily情境0。这是一段专为检查证据结构编写的内容，不是真实人物资料。",
+      "situations": [
+        "routine"
+      ],
+      "entailment": {
+        "status": "supported",
+        "method": "human",
+        "assessor": "synthetic-fixture-author",
+        "reason": "仅用于工程回归，不是人物真实性认证"
+      }
+    },
+    {
+      "id": "e-counterexamples-0",
+      "source_id": "s-counterexamples-0",
+      "dimension": "counterexamples",
+      "scene_id": "scene-counterexamples-0",
+      "scene_mode": "canon",
+      "scope": {
+        "character_id": "fiction:lampkeeper",
+        "continuity": "main",
+        "branch": "shared",
+        "stage_order": 1
+      },
+      "locator": "测试段落",
+      "start": 0,
+      "end": 53,
+      "quote": "虚构测试材料：counterexamples情境0。这是一段专为检查证据结构编写的内容，不是真实人物资料。",
+      "situations": [],
+      "entailment": {
+        "status": "supported",
+        "method": "human",
+        "assessor": "synthetic-fixture-author",
+        "reason": "仅用于工程回归，不是人物真实性认证"
+      }
+    }
+  ],
+  "claims": [
+    {
+      "id": "c1",
+      "type": "stable_trait",
+      "statement": "仅用于演示结构检查的行为倾向。",
+      "scope": {
+        "character_id": "fiction:lampkeeper",
+        "continuity": "main",
+        "branch": "shared",
+        "stage_order": 1
+      },
+      "evidence_ids": [
+        "e-behavior-0",
+        "e-behavior-1"
+      ],
+      "conditions": [],
+      "counter_evidence_ids": [],
+      "entailment": {
+        "status": "supported",
+        "method": "human",
+        "assessor": "synthetic-fixture-author",
+        "reason": "仅用于工程回归，不是人物真实性认证"
+      }
+    }
+  ],
+  "waivers": []
+}

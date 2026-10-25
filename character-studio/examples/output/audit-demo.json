@@ -1,0 +1,1202 @@
+{
+  "corpus": {
+    "version": "0.3.0",
+    "source_results": [
+      {
+        "id": "s1",
+        "family": "s1",
+        "usable": false,
+        "kind": "official_script",
+        "issues": [
+          {
+            "code": "not_body_access",
+            "detail": "搜索摘要/标题或不可达页面仅可发现来源",
+            "severity": "blocker"
+          }
+        ]
+      },
+      {
+        "id": "s2",
+        "family": "s2",
+        "usable": true,
+        "kind": "official_script",
+        "issues": []
+      }
+    ],
+    "evidence_results": [
+      {
+        "id": "e1",
+        "anchor_key": "s1:0:40",
+        "source_id": "s1",
+        "family": "s1",
+        "scene_id": "scene-0",
+        "dimension": "behavior",
+        "scene_mode": "canon",
+        "situations": [
+          "risk",
+          "routine",
+          "conflict",
+          "benefit"
+        ],
+        "usable": false,
+        "canonical": false,
+        "primary": false,
+        "issues": [
+          {
+            "code": "unusable_source",
+            "detail": "来源缺失或正文不可用",
+            "severity": "blocker"
+          }
+        ]
+      },
+      {
+        "id": "e2",
+        "anchor_key": "s2:0:40",
+        "source_id": "s2",
+        "family": "s2",
+        "scene_id": "scene-1",
+        "dimension": "behavior",
+        "scene_mode": "canon",
+        "situations": [
+          "risk",
+          "routine",
+          "conflict",
+          "benefit"
+        ],
+        "usable": true,
+        "canonical": true,
+        "primary": true,
+        "issues": []
+      }
+    ],
+    "claim_results": [
+      {
+        "id": "c1",
+        "type": "stable_trait",
+        "accepted": false,
+        "runtime_eligible": false,
+        "issues": [
+          {
+            "code": "broken_evidence_chain",
+            "detail": "引用缺失或被拦截的证据",
+            "severity": "blocker"
+          },
+          {
+            "code": "noncanonical_support",
+            "detail": "梦境、宣传或同人不足以作为全局事实/稳定人格的依据",
+            "severity": "blocker"
+          },
+          {
+            "code": "single_scene_generalization",
+            "detail": "稳定人格至少需要两个独立剧情场景；这是可调整的工程门槛",
+            "severity": "blocker"
+          },
+          {
+            "code": "unsupported_condition",
+            "detail": "条件本身没有可追溯的语义支持",
+            "severity": "blocker"
+          }
+        ]
+      }
+    ],
+    "coverage": [
+      {
+        "dimension": "identity",
+        "name": "身份与版本",
+        "priority": 0,
+        "status": "missing",
+        "independent_scenes": 0,
+        "source_families": 0,
+        "primary_evidence": 0,
+        "secondary_evidence": 0,
+        "supplementary_evidence": 0,
+        "missing_situations": [],
+        "requested_min_scenes": 1,
+        "acquisition_failure": null,
+        "invalid_waiver": false
+      },
+      {
+        "dimension": "motivation",
+        "name": "动机与内在矛盾",
+        "priority": 1,
+        "status": "missing",
+        "independent_scenes": 0,
+        "source_families": 0,
+        "primary_evidence": 0,
+        "secondary_evidence": 0,
+        "supplementary_evidence": 0,
+        "missing_situations": [
+          "routine",
+          "pressure"
+        ],
+        "requested_min_scenes": 2,
+        "acquisition_failure": null,
+        "invalid_waiver": false
+      },
+      {
+        "dimension": "values",
+        "name": "价值观与底线",
+        "priority": 1,
+        "status": "missing",
+        "independent_scenes": 0,
+        "source_families": 0,
+        "primary_evidence": 0,
+        "secondary_evidence": 0,
+        "supplementary_evidence": 0,
+        "missing_situations": [
+          "conflict",
+          "refusal"
+        ],
+        "requested_min_scenes": 2,
+        "acquisition_failure": null,
+        "invalid_waiver": false
+      },
+      {
+        "dimension": "history",
+        "name": "经历与变化",
+        "priority": 1,
+        "status": "missing",
+        "independent_scenes": 0,
+        "source_families": 0,
+        "primary_evidence": 0,
+        "secondary_evidence": 0,
+        "supplementary_evidence": 0,
+        "missing_situations": [],
+        "requested_min_scenes": 1,
+        "acquisition_failure": null,
+        "invalid_waiver": false
+      },
+      {
+        "dimension": "relationships",
+        "name": "关系差异",
+        "priority": 1,
+        "status": "missing",
+        "independent_scenes": 0,
+        "source_families": 0,
+        "primary_evidence": 0,
+        "secondary_evidence": 0,
+        "supplementary_evidence": 0,
+        "missing_situations": [
+          "stranger",
+          "familiar"
+        ],
+        "requested_min_scenes": 2,
+        "acquisition_failure": null,
+        "invalid_waiver": false
+      },
+      {
+        "dimension": "language",
+        "name": "情境化语言",
+        "priority": 1,
+        "status": "missing",
+        "independent_scenes": 0,
+        "source_families": 0,
+        "primary_evidence": 0,
+        "secondary_evidence": 0,
+        "supplementary_evidence": 0,
+        "missing_situations": [
+          "routine",
+          "pressure",
+          "serious"
+        ],
+        "requested_min_scenes": 2,
+        "acquisition_failure": null,
+        "invalid_waiver": false
+      },
+      {
+        "dimension": "behavior",
+        "name": "行为选择与代价",
+        "priority": 1,
+        "status": "partial",
+        "independent_scenes": 1,
+        "source_families": 1,
+        "primary_evidence": 1,
+        "secondary_evidence": 0,
+        "supplementary_evidence": 0,
+        "missing_situations": [],
+        "requested_min_scenes": 2,
+        "acquisition_failure": null,
+        "invalid_waiver": false
+      },
+      {
+        "dimension": "knowledge_limits",
+        "name": "认知边界",
+        "priority": 0,
+        "status": "missing",
+        "independent_scenes": 0,
+        "source_families": 0,
+        "primary_evidence": 0,
+        "secondary_evidence": 0,
+        "supplementary_evidence": 0,
+        "missing_situations": [],
+        "requested_min_scenes": 1,
+        "acquisition_failure": null,
+        "invalid_waiver": false
+      },
+      {
+        "dimension": "daily",
+        "name": "日常生活",
+        "priority": 2,
+        "status": "missing",
+        "independent_scenes": 0,
+        "source_families": 0,
+        "primary_evidence": 0,
+        "secondary_evidence": 0,
+        "supplementary_evidence": 0,
+        "missing_situations": [
+          "routine"
+        ],
+        "requested_min_scenes": 1,
+        "acquisition_failure": null,
+        "invalid_waiver": false
+      },
+      {
+        "dimension": "counterexamples",
+        "name": "反例与矛盾",
+        "priority": 1,
+        "status": "missing",
+        "independent_scenes": 0,
+        "source_families": 0,
+        "primary_evidence": 0,
+        "secondary_evidence": 0,
+        "supplementary_evidence": 0,
+        "missing_situations": [],
+        "requested_min_scenes": 1,
+        "acquisition_failure": null,
+        "invalid_waiver": false
+      },
+      {
+        "dimension": "visual",
+        "name": "外观与动作",
+        "status": "not_requested",
+        "reason": "本次未请求此能力，未放入覆盖分母"
+      },
+      {
+        "dimension": "voice",
+        "name": "声音与节奏",
+        "status": "not_requested",
+        "reason": "本次未请求此能力，未放入覆盖分母"
+      }
+    ],
+    "independent_source_families": 2,
+    "hard_gaps": [
+      "identity",
+      "knowledge_limits"
+    ],
+    "runtime_claims": [],
+    "important_gaps": [
+      "motivation",
+      "values",
+      "history",
+      "relationships",
+      "language",
+      "behavior",
+      "counterexamples"
+    ],
+    "coverage_template_ready": false,
+    "ready_for_runtime": false,
+    "web_exhaustiveness_proven": false,
+    "overall_completeness_percentage": null,
+    "notes": [
+      "覆盖率只对应模板，不证明网上材料已找全；本工具不输出伪精确全面度百分比。",
+      "语义评审由调用方提供，工具检查记录和引用一致性，不能独自证明材料真实或结论正确。",
+      "covered不等于可稳定扮演；仍需多轮、跨场景和独立评审。"
+    ]
+  },
+  "plan": {
+    "version": "0.3.0",
+    "queries": [
+      {
+        "dimension": "identity",
+        "priority": 0,
+        "query": "\"虚构测试作品\" \"巡灯人甲\" 身份与版本 ",
+        "purpose": "补充身份与版本的有上下文证据；保留来源和定位",
+        "preferred_sources": [
+          "official_script",
+          "official_profile",
+          "game_transcript",
+          "wiki_transcript"
+        ],
+        "avoid": [
+          "fanon_as_canon",
+          "generated_biography",
+          "search_snippet_as_body"
+        ],
+        "required_output": [
+          "canonical_url",
+          "body_snapshot_hash",
+          "scene_id",
+          "scene_mode",
+          "story_scope",
+          "speaker",
+          "addressee",
+          "locator",
+          "evidence_anchor",
+          "entailment_review"
+        ]
+      },
+      {
+        "dimension": "knowledge_limits",
+        "priority": 0,
+        "query": "\"虚构测试作品\" \"巡灯人甲\" 认知边界 ",
+        "purpose": "补充认知边界的有上下文证据；保留来源和定位",
+        "preferred_sources": [
+          "official_script",
+          "official_profile",
+          "game_transcript",
+          "wiki_transcript"
+        ],
+        "avoid": [
+          "fanon_as_canon",
+          "generated_biography",
+          "search_snippet_as_body"
+        ],
+        "required_output": [
+          "canonical_url",
+          "body_snapshot_hash",
+          "scene_id",
+          "scene_mode",
+          "story_scope",
+          "speaker",
+          "addressee",
+          "locator",
+          "evidence_anchor",
+          "entailment_review"
+        ]
+      },
+      {
+        "dimension": "motivation",
+        "priority": 1,
+        "query": "\"虚构测试作品\" \"巡灯人甲\" 动机与内在矛盾 routine pressure",
+        "purpose": "补充动机与内在矛盾的有上下文证据；保留来源和定位",
+        "preferred_sources": [
+          "official_script",
+          "official_profile",
+          "game_transcript",
+          "wiki_transcript"
+        ],
+        "avoid": [
+          "fanon_as_canon",
+          "generated_biography",
+          "search_snippet_as_body"
+        ],
+        "required_output": [
+          "canonical_url",
+          "body_snapshot_hash",
+          "scene_id",
+          "scene_mode",
+          "story_scope",
+          "speaker",
+          "addressee",
+          "locator",
+          "evidence_anchor",
+          "entailment_review"
+        ]
+      },
+      {
+        "dimension": "values",
+        "priority": 1,
+        "query": "\"虚构测试作品\" \"巡灯人甲\" 价值观与底线 conflict refusal",
+        "purpose": "补充价值观与底线的有上下文证据；保留来源和定位",
+        "preferred_sources": [
+          "official_script",
+          "official_profile",
+          "game_transcript",
+          "wiki_transcript"
+        ],
+        "avoid": [
+          "fanon_as_canon",
+          "generated_biography",
+          "search_snippet_as_body"
+        ],
+        "required_output": [
+          "canonical_url",
+          "body_snapshot_hash",
+          "scene_id",
+          "scene_mode",
+          "story_scope",
+          "speaker",
+          "addressee",
+          "locator",
+          "evidence_anchor",
+          "entailment_review"
+        ]
+      },
+      {
+        "dimension": "history",
+        "priority": 1,
+        "query": "\"虚构测试作品\" \"巡灯人甲\" 经历与变化 ",
+        "purpose": "补充经历与变化的有上下文证据；保留来源和定位",
+        "preferred_sources": [
+          "official_script",
+          "official_profile",
+          "game_transcript",
+          "wiki_transcript"
+        ],
+        "avoid": [
+          "fanon_as_canon",
+          "generated_biography",
+          "search_snippet_as_body"
+        ],
+        "required_output": [
+          "canonical_url",
+          "body_snapshot_hash",
+          "scene_id",
+          "scene_mode",
+          "story_scope",
+          "speaker",
+          "addressee",
+          "locator",
+          "evidence_anchor",
+          "entailment_review"
+        ]
+      },
+      {
+        "dimension": "relationships",
+        "priority": 1,
+        "query": "\"虚构测试作品\" \"巡灯人甲\" 关系差异 stranger familiar",
+        "purpose": "补充关系差异的有上下文证据；保留来源和定位",
+        "preferred_sources": [
+          "official_script",
+          "official_profile",
+          "game_transcript",
+          "wiki_transcript"
+        ],
+        "avoid": [
+          "fanon_as_canon",
+          "generated_biography",
+          "search_snippet_as_body"
+        ],
+        "required_output": [
+          "canonical_url",
+          "body_snapshot_hash",
+          "scene_id",
+          "scene_mode",
+          "story_scope",
+          "speaker",
+          "addressee",
+          "locator",
+          "evidence_anchor",
+          "entailment_review"
+        ]
+      },
+      {
+        "dimension": "language",
+        "priority": 1,
+        "query": "\"虚构测试作品\" \"巡灯人甲\" 情境化语言 routine pressure serious",
+        "purpose": "补充情境化语言的有上下文证据；保留来源和定位",
+        "preferred_sources": [
+          "official_script",
+          "official_profile",
+          "game_transcript",
+          "wiki_transcript"
+        ],
+        "avoid": [
+          "fanon_as_canon",
+          "generated_biography",
+          "search_snippet_as_body"
+        ],
+        "required_output": [
+          "canonical_url",
+          "body_snapshot_hash",
+          "scene_id",
+          "scene_mode",
+          "story_scope",
+          "speaker",
+          "addressee",
+          "locator",
+          "evidence_anchor",
+          "entailment_review"
+        ]
+      },
+      {
+        "dimension": "behavior",
+        "priority": 1,
+        "query": "\"虚构测试作品\" \"巡灯人甲\" 行为选择与代价 ",
+        "purpose": "补充行为选择与代价的有上下文证据；保留来源和定位",
+        "preferred_sources": [
+          "official_script",
+          "official_profile",
+          "game_transcript",
+          "wiki_transcript"
+        ],
+        "avoid": [
+          "fanon_as_canon",
+          "generated_biography",
+          "search_snippet_as_body"
+        ],
+        "required_output": [
+          "canonical_url",
+          "body_snapshot_hash",
+          "scene_id",
+          "scene_mode",
+          "story_scope",
+          "speaker",
+          "addressee",
+          "locator",
+          "evidence_anchor",
+          "entailment_review"
+        ]
+      },
+      {
+        "dimension": "counterexamples",
+        "priority": 1,
+        "query": "\"虚构测试作品\" \"巡灯人甲\" 反例与矛盾 ",
+        "purpose": "补充反例与矛盾的有上下文证据；保留来源和定位",
+        "preferred_sources": [
+          "official_script",
+          "official_profile",
+          "game_transcript",
+          "wiki_transcript"
+        ],
+        "avoid": [
+          "fanon_as_canon",
+          "generated_biography",
+          "search_snippet_as_body"
+        ],
+        "required_output": [
+          "canonical_url",
+          "body_snapshot_hash",
+          "scene_id",
+          "scene_mode",
+          "story_scope",
+          "speaker",
+          "addressee",
+          "locator",
+          "evidence_anchor",
+          "entailment_review"
+        ]
+      },
+      {
+        "dimension": "daily",
+        "priority": 2,
+        "query": "\"虚构测试作品\" \"巡灯人甲\" 日常生活 routine",
+        "purpose": "补充日常生活的有上下文证据；保留来源和定位",
+        "preferred_sources": [
+          "official_script",
+          "official_profile",
+          "game_transcript",
+          "wiki_transcript"
+        ],
+        "avoid": [
+          "fanon_as_canon",
+          "generated_biography",
+          "search_snippet_as_body"
+        ],
+        "required_output": [
+          "canonical_url",
+          "body_snapshot_hash",
+          "scene_id",
+          "scene_mode",
+          "story_scope",
+          "speaker",
+          "addressee",
+          "locator",
+          "evidence_anchor",
+          "entailment_review"
+        ]
+      }
+    ],
+    "remaining_unplanned_gaps": 0,
+    "stop_reason": "continue_targeted_acquisition",
+    "rules": [
+      "先消歧身份、世界线、分支与阶段，再执行查询。",
+      "返回摘要只能用于发现；必须阅读全文或明确记录不可达。",
+      "实际搜索与抓取由宿主agent的联网工具执行；本服务器不绕过访问限制。",
+      "每轮按新增独立场景和关键缺口缩小判断收益；不要按页面数填满模板。"
+    ]
+  },
+  "well_formed_synthetic_control": {
+    "version": "0.3.0",
+    "source_results": [
+      {
+        "id": "s-identity-0",
+        "family": "s-identity-0",
+        "usable": true,
+        "kind": "official_script",
+        "issues": []
+      },
+      {
+        "id": "s-motivation-0",
+        "family": "s-motivation-0",
+        "usable": true,
+        "kind": "official_script",
+        "issues": []
+      },
+      {
+        "id": "s-motivation-1",
+        "family": "s-motivation-1",
+        "usable": true,
+        "kind": "official_script",
+        "issues": []
+      },
+      {
+        "id": "s-values-0",
+        "family": "s-values-0",
+        "usable": true,
+        "kind": "official_script",
+        "issues": []
+      },
+      {
+        "id": "s-values-1",
+        "family": "s-values-1",
+        "usable": true,
+        "kind": "official_script",
+        "issues": []
+      },
+      {
+        "id": "s-history-0",
+        "family": "s-history-0",
+        "usable": true,
+        "kind": "official_script",
+        "issues": []
+      },
+      {
+        "id": "s-relationships-0",
+        "family": "s-relationships-0",
+        "usable": true,
+        "kind": "official_script",
+        "issues": []
+      },
+      {
+        "id": "s-relationships-1",
+        "family": "s-relationships-1",
+        "usable": true,
+        "kind": "official_script",
+        "issues": []
+      },
+      {
+        "id": "s-language-0",
+        "family": "s-language-0",
+        "usable": true,
+        "kind": "official_script",
+        "issues": []
+      },
+      {
+        "id": "s-language-1",
+        "family": "s-language-1",
+        "usable": true,
+        "kind": "official_script",
+        "issues": []
+      },
+      {
+        "id": "s-behavior-0",
+        "family": "s-behavior-0",
+        "usable": true,
+        "kind": "official_script",
+        "issues": []
+      },
+      {
+        "id": "s-behavior-1",
+        "family": "s-behavior-1",
+        "usable": true,
+        "kind": "official_script",
+        "issues": []
+      },
+      {
+        "id": "s-knowledge_limits-0",
+        "family": "s-knowledge_limits-0",
+        "usable": true,
+        "kind": "official_script",
+        "issues": []
+      },
+      {
+        "id": "s-daily-0",
+        "family": "s-daily-0",
+        "usable": true,
+        "kind": "official_script",
+        "issues": []
+      },
+      {
+        "id": "s-counterexamples-0",
+        "family": "s-counterexamples-0",
+        "usable": true,
+        "kind": "official_script",
+        "issues": []
+      }
+    ],
+    "evidence_results": [
+      {
+        "id": "e-identity-0",
+        "anchor_key": "s-identity-0:0:46",
+        "source_id": "s-identity-0",
+        "family": "s-identity-0",
+        "scene_id": "scene-identity-0",
+        "dimension": "identity",
+        "scene_mode": "canon",
+        "situations": [],
+        "usable": true,
+        "canonical": true,
+        "primary": true,
+        "issues": []
+      },
+      {
+        "id": "e-motivation-0",
+        "anchor_key": "s-motivation-0:0:48",
+        "source_id": "s-motivation-0",
+        "family": "s-motivation-0",
+        "scene_id": "scene-motivation-0",
+        "dimension": "motivation",
+        "scene_mode": "canon",
+        "situations": [
+          "routine",
+          "pressure"
+        ],
+        "usable": true,
+        "canonical": true,
+        "primary": true,
+        "issues": []
+      },
+      {
+        "id": "e-motivation-1",
+        "anchor_key": "s-motivation-1:0:48",
+        "source_id": "s-motivation-1",
+        "family": "s-motivation-1",
+        "scene_id": "scene-motivation-1",
+        "dimension": "motivation",
+        "scene_mode": "canon",
+        "situations": [
+          "routine",
+          "pressure"
+        ],
+        "usable": true,
+        "canonical": true,
+        "primary": true,
+        "issues": []
+      },
+      {
+        "id": "e-values-0",
+        "anchor_key": "s-values-0:0:44",
+        "source_id": "s-values-0",
+        "family": "s-values-0",
+        "scene_id": "scene-values-0",
+        "dimension": "values",
+        "scene_mode": "canon",
+        "situations": [
+          "conflict",
+          "refusal"
+        ],
+        "usable": true,
+        "canonical": true,
+        "primary": true,
+        "issues": []
+      },
+      {
+        "id": "e-values-1",
+        "anchor_key": "s-values-1:0:44",
+        "source_id": "s-values-1",
+        "family": "s-values-1",
+        "scene_id": "scene-values-1",
+        "dimension": "values",
+        "scene_mode": "canon",
+        "situations": [
+          "conflict",
+          "refusal"
+        ],
+        "usable": true,
+        "canonical": true,
+        "primary": true,
+        "issues": []
+      },
+      {
+        "id": "e-history-0",
+        "anchor_key": "s-history-0:0:45",
+        "source_id": "s-history-0",
+        "family": "s-history-0",
+        "scene_id": "scene-history-0",
+        "dimension": "history",
+        "scene_mode": "canon",
+        "situations": [],
+        "usable": true,
+        "canonical": true,
+        "primary": true,
+        "issues": []
+      },
+      {
+        "id": "e-relationships-0",
+        "anchor_key": "s-relationships-0:0:51",
+        "source_id": "s-relationships-0",
+        "family": "s-relationships-0",
+        "scene_id": "scene-relationships-0",
+        "dimension": "relationships",
+        "scene_mode": "canon",
+        "situations": [
+          "stranger",
+          "familiar"
+        ],
+        "usable": true,
+        "canonical": true,
+        "primary": true,
+        "issues": []
+      },
+      {
+        "id": "e-relationships-1",
+        "anchor_key": "s-relationships-1:0:51",
+        "source_id": "s-relationships-1",
+        "family": "s-relationships-1",
+        "scene_id": "scene-relationships-1",
+        "dimension": "relationships",
+        "scene_mode": "canon",
+        "situations": [
+          "stranger",
+          "familiar"
+        ],
+        "usable": true,
+        "canonical": true,
+        "primary": true,
+        "issues": []
+      },
+      {
+        "id": "e-language-0",
+        "anchor_key": "s-language-0:0:46",
+        "source_id": "s-language-0",
+        "family": "s-language-0",
+        "scene_id": "scene-language-0",
+        "dimension": "language",
+        "scene_mode": "canon",
+        "situations": [
+          "routine",
+          "pressure",
+          "serious"
+        ],
+        "usable": true,
+        "canonical": true,
+        "primary": true,
+        "issues": []
+      },
+      {
+        "id": "e-language-1",
+        "anchor_key": "s-language-1:0:46",
+        "source_id": "s-language-1",
+        "family": "s-language-1",
+        "scene_id": "scene-language-1",
+        "dimension": "language",
+        "scene_mode": "canon",
+        "situations": [
+          "routine",
+          "pressure",
+          "serious"
+        ],
+        "usable": true,
+        "canonical": true,
+        "primary": true,
+        "issues": []
+      },
+      {
+        "id": "e-behavior-0",
+        "anchor_key": "s-behavior-0:0:46",
+        "source_id": "s-behavior-0",
+        "family": "s-behavior-0",
+        "scene_id": "scene-behavior-0",
+        "dimension": "behavior",
+        "scene_mode": "canon",
+        "situations": [
+          "benefit",
+          "risk",
+          "conflict"
+        ],
+        "usable": true,
+        "canonical": true,
+        "primary": true,
+        "issues": []
+      },
+      {
+        "id": "e-behavior-1",
+        "anchor_key": "s-behavior-1:0:46",
+        "source_id": "s-behavior-1",
+        "family": "s-behavior-1",
+        "scene_id": "scene-behavior-1",
+        "dimension": "behavior",
+        "scene_mode": "canon",
+        "situations": [
+          "benefit",
+          "risk",
+          "conflict"
+        ],
+        "usable": true,
+        "canonical": true,
+        "primary": true,
+        "issues": []
+      },
+      {
+        "id": "e-knowledge_limits-0",
+        "anchor_key": "s-knowledge_limits-0:0:54",
+        "source_id": "s-knowledge_limits-0",
+        "family": "s-knowledge_limits-0",
+        "scene_id": "scene-knowledge_limits-0",
+        "dimension": "knowledge_limits",
+        "scene_mode": "canon",
+        "situations": [],
+        "usable": true,
+        "canonical": true,
+        "primary": true,
+        "issues": []
+      },
+      {
+        "id": "e-daily-0",
+        "anchor_key": "s-daily-0:0:43",
+        "source_id": "s-daily-0",
+        "family": "s-daily-0",
+        "scene_id": "scene-daily-0",
+        "dimension": "daily",
+        "scene_mode": "canon",
+        "situations": [
+          "routine"
+        ],
+        "usable": true,
+        "canonical": true,
+        "primary": true,
+        "issues": []
+      },
+      {
+        "id": "e-counterexamples-0",
+        "anchor_key": "s-counterexamples-0:0:53",
+        "source_id": "s-counterexamples-0",
+        "family": "s-counterexamples-0",
+        "scene_id": "scene-counterexamples-0",
+        "dimension": "counterexamples",
+        "scene_mode": "canon",
+        "situations": [],
+        "usable": true,
+        "canonical": true,
+        "primary": true,
+        "issues": []
+      }
+    ],
+    "claim_results": [
+      {
+        "id": "c1",
+        "type": "stable_trait",
+        "accepted": true,
+        "runtime_eligible": true,
+        "issues": []
+      }
+    ],
+    "coverage": [
+      {
+        "dimension": "identity",
+        "name": "身份与版本",
+        "priority": 0,
+        "status": "covered",
+        "independent_scenes": 1,
+        "source_families": 1,
+        "primary_evidence": 1,
+        "secondary_evidence": 0,
+        "supplementary_evidence": 0,
+        "missing_situations": [],
+        "requested_min_scenes": 1,
+        "acquisition_failure": null,
+        "invalid_waiver": false
+      },
+      {
+        "dimension": "motivation",
+        "name": "动机与内在矛盾",
+        "priority": 1,
+        "status": "covered",
+        "independent_scenes": 2,
+        "source_families": 2,
+        "primary_evidence": 2,
+        "secondary_evidence": 0,
+        "supplementary_evidence": 0,
+        "missing_situations": [],
+        "requested_min_scenes": 2,
+        "acquisition_failure": null,
+        "invalid_waiver": false
+      },
+      {
+        "dimension": "values",
+        "name": "价值观与底线",
+        "priority": 1,
+        "status": "covered",
+        "independent_scenes": 2,
+        "source_families": 2,
+        "primary_evidence": 2,
+        "secondary_evidence": 0,
+        "supplementary_evidence": 0,
+        "missing_situations": [],
+        "requested_min_scenes": 2,
+        "acquisition_failure": null,
+        "invalid_waiver": false
+      },
+      {
+        "dimension": "history",
+        "name": "经历与变化",
+        "priority": 1,
+        "status": "covered",
+        "independent_scenes": 1,
+        "source_families": 1,
+        "primary_evidence": 1,
+        "secondary_evidence": 0,
+        "supplementary_evidence": 0,
+        "missing_situations": [],
+        "requested_min_scenes": 1,
+        "acquisition_failure": null,
+        "invalid_waiver": false
+      },
+      {
+        "dimension": "relationships",
+        "name": "关系差异",
+        "priority": 1,
+        "status": "covered",
+        "independent_scenes": 2,
+        "source_families": 2,
+        "primary_evidence": 2,
+        "secondary_evidence": 0,
+        "supplementary_evidence": 0,
+        "missing_situations": [],
+        "requested_min_scenes": 2,
+        "acquisition_failure": null,
+        "invalid_waiver": false
+      },
+      {
+        "dimension": "language",
+        "name": "情境化语言",
+        "priority": 1,
+        "status": "covered",
+        "independent_scenes": 2,
+        "source_families": 2,
+        "primary_evidence": 2,
+        "secondary_evidence": 0,
+        "supplementary_evidence": 0,
+        "missing_situations": [],
+        "requested_min_scenes": 2,
+        "acquisition_failure": null,
+        "invalid_waiver": false
+      },
+      {
+        "dimension": "behavior",
+        "name": "行为选择与代价",
+        "priority": 1,
+        "status": "covered",
+        "independent_scenes": 2,
+        "source_families": 2,
+        "primary_evidence": 2,
+        "secondary_evidence": 0,
+        "supplementary_evidence": 0,
+        "missing_situations": [],
+        "requested_min_scenes": 2,
+        "acquisition_failure": null,
+        "invalid_waiver": false
+      },
+      {
+        "dimension": "knowledge_limits",
+        "name": "认知边界",
+        "priority": 0,
+        "status": "covered",
+        "independent_scenes": 1,
+        "source_families": 1,
+        "primary_evidence": 1,
+        "secondary_evidence": 0,
+        "supplementary_evidence": 0,
+        "missing_situations": [],
+        "requested_min_scenes": 1,
+        "acquisition_failure": null,
+        "invalid_waiver": false
+      },
+      {
+        "dimension": "daily",
+        "name": "日常生活",
+        "priority": 2,
+        "status": "covered",
+        "independent_scenes": 1,
+        "source_families": 1,
+        "primary_evidence": 1,
+        "secondary_evidence": 0,
+        "supplementary_evidence": 0,
+        "missing_situations": [],
+        "requested_min_scenes": 1,
+        "acquisition_failure": null,
+        "invalid_waiver": false
+      },
+      {
+        "dimension": "counterexamples",
+        "name": "反例与矛盾",
+        "priority": 1,
+        "status": "covered",
+        "independent_scenes": 1,
+        "source_families": 1,
+        "primary_evidence": 1,
+        "secondary_evidence": 0,
+        "supplementary_evidence": 0,
+        "missing_situations": [],
+        "requested_min_scenes": 1,
+        "acquisition_failure": null,
+        "invalid_waiver": false
+      },
+      {
+        "dimension": "visual",
+        "name": "外观与动作",
+        "status": "not_requested",
+        "reason": "本次未请求此能力，未放入覆盖分母"
+      },
+      {
+        "dimension": "voice",
+        "name": "声音与节奏",
+        "status": "not_requested",
+        "reason": "本次未请求此能力，未放入覆盖分母"
+      }
+    ],
+    "independent_source_families": 15,
+    "hard_gaps": [],
+    "runtime_claims": [
+      "c1"
+    ],
+    "important_gaps": [],
+    "coverage_template_ready": true,
+    "ready_for_runtime": true,
+    "web_exhaustiveness_proven": false,
+    "overall_completeness_percentage": null,
+    "notes": [
+      "覆盖率只对应模板，不证明网上材料已找全；本工具不输出伪精确全面度百分比。",
+      "语义评审由调用方提供，工具检查记录和引用一致性，不能独自证明材料真实或结论正确。",
+      "covered不等于可稳定扮演；仍需多轮、跨场景和独立评审。"
+    ]
+  },
+  "evaluation": {
+    "version": "0.3.0",
+    "issues": [
+      {
+        "code": "exposed_regression_not_new_holdout",
+        "detail": "q0",
+        "severity": "blocker"
+      },
+      {
+        "code": "hidden_fact_as_personality_target",
+        "detail": "q1",
+        "severity": "blocker"
+      },
+      {
+        "code": "single_sample_only",
+        "detail": "每题每组少于2次，不评估采样变化",
+        "severity": "warning"
+      },
+      {
+        "code": "same_model_judge",
+        "detail": "自评偏差，需独立模型或人工复核",
+        "severity": "warning"
+      },
+      {
+        "code": "judge_not_calibrated",
+        "detail": "先检查换序和同答案一致性，未校准分只作探索",
+        "severity": "warning"
+      }
+    ],
+    "independent_scene_clusters": 5,
+    "tracks": [
+      "fact_recall",
+      "personality_transfer",
+      "language_style",
+      "immersion",
+      "multi_turn"
+    ],
+    "formal_ready": false,
+    "allowed_report": "diagnostic_only",
+    "character_fidelity_probability": null,
+    "notes": [
+      "人物符合度量表分不等于客观概率。",
+      "事实复现、人格迁移、语言、沉浸、多轮连续性分别报告，不折成一个万能分。",
+      "已经用来修改通用规则的旧题应转为回归集，新版效果需要新留出集。"
+    ]
+  },
+  "warning": "所有示例为虚构工程夹具，不是实抓角色资料，也不证明真实抓取精度提升。"
+}
